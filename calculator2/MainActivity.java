@@ -49,72 +49,72 @@ private ArrayList<String> list = new ArrayList<String>();
 			@Override
 			public void onGesturePerformed(GestureOverlayView overlay, Gesture gesture) {
 				// TODO Auto-generated method stub
-				ArrayList<Prediction>predictions=library.recognize(gesture);//Ê¶±ğÊÖÊÆ: Í¨¹ı library ¶ÁÈ¡ÊÖÊÆÎÄ¼ş £¬ÔÚÕâÀï¶ÁÈ¡
-	   			Prediction prediction=predictions.get(0);//È¡µ½µÚÒ»¸ö
+				ArrayList<Prediction>predictions=library.recognize(gesture);//è¯†åˆ«æ‰‹åŠ¿: é€šè¿‡ library è¯»å–æ‰‹åŠ¿æ–‡ä»¶ ï¼Œåœ¨è¿™é‡Œè¯»å–
+	   			Prediction prediction=predictions.get(0);//å–åˆ°ç¬¬ä¸€ä¸ª
 	   			
-	   			if(prediction.score>=1.0){//¸ü¼ÓÏàËÆ¶È À´ È¡µÃ Çø¼ä£¨0.0~10.0 ´óÖÂÇø¼ä£©
-	   				if(prediction.name.equals("1")){//Í¨¹ınameÀ´ÅĞ¶ÏÖµ
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 1£¡", Toast.LENGTH_SHORT).show();
+	   			if(prediction.score>=1.0){//æ›´åŠ ç›¸ä¼¼åº¦ æ¥ å–å¾— åŒºé—´ï¼ˆ0.0~10.0 å¤§è‡´åŒºé—´ï¼‰
+	   				if(prediction.name.equals("1")){//é€šè¿‡nameæ¥åˆ¤æ–­å€¼
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 1ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("1");
 	   				}
 	   				else if(prediction.name.equals("2")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 2£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 2ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("2");
 	   				}
 	   				else if(prediction.name.equals("3")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 3£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 3ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("3");
 	   				}
 	   				else if(prediction.name.equals("4")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 4£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 4ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("4");
 	   				}
 	   				else if(prediction.name.equals("5")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 5£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 5ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("5");
 	   				}
 	   				else if(prediction.name.equals("6")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 6£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 6ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("6");
 	   				}
 	   				else if(prediction.name.equals("7")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 7£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 7ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("7");
 	   				}
 	   				else if(prediction.name.equals("8")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 8£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 8ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("8");
 	   				}
 	   				else if(prediction.name.equals("9")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 9£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 9ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("9");
 	   				}
 	   				else if(prediction.name.equals("0")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 0£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 0ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("0");
 	   				}
 	   				else if(prediction.name.equals("+")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁË·ûºÅ +£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†ç¬¦å· +ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("+");
 	   				}
 	   				else if(prediction.name.equals("-")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁË·ûºÅ -£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†ç¬¦å· -ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("-");
 	   				}
 	   				else if(prediction.name.equals("x")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁË·ûºÅ x£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†ç¬¦å· xï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("x");
 	   				}
 	   				else if(prediction.name.equals("/")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁË·ûºÅ /£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†ç¬¦å· /ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("/");
 	   				}
 	   				else if(prediction.name.equals("a")){
-	   					Toast.makeText(MainActivity.this, "ÄúÊäÈëÁËÊı×Ö 2£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "æ‚¨è¾“å…¥äº†æ•°å­— 2ï¼", Toast.LENGTH_SHORT).show();
 	   					list.add("a");
 	   				}
 	   				else{
-	   					Toast.makeText(MainActivity.this, "ÇëÊäÈëÊÖÊÆ£¡", Toast.LENGTH_SHORT).show();
+	   					Toast.makeText(MainActivity.this, "è¯·è¾“å…¥æ‰‹åŠ¿ï¼", Toast.LENGTH_SHORT).show();
 	   					
 	   				}
 	   				equation.setText(list.toString().replace("[","").replace("]","").replace(",","").replace(" ", ""));
